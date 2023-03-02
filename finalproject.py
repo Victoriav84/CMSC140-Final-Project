@@ -29,8 +29,3 @@ while max > 0:
             print(letter, end="")
         else:
             print("_", end="")
-            
-#So I really like the idea although you did run into a problem with the whole showing the letters because of the different lengths.
-#It is going to be challanging to fix this but one idea that comes to mind is to set the amount of dashes to the length of the word. Then split the word into the letters composing it and put it into a list.
-#After that you can make a for loop to check if the answer is in that list. If it is then replace the corresponding dash by using the letters placement in the list.
-#To be honest, I don't know how to do the last part, but I believe in you!
