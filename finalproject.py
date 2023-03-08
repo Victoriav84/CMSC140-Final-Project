@@ -2,11 +2,11 @@ import random
 
 listofwords = ["familiar", "machine", "waiting", "cushion", "damage", "natural", "wonder", "religion", "tongue", "homeless", "daughter", "railway", "married", "dinosaur", "material"]
 word = random.choice(listofwords)
-print("\nWelcome to Hangman!\nYou will have 6 tries to try to guess the correct word.\nIf you don't guess the word correctly, you lose the game.")
+print("\nWelcome to Hangman!\nYou will have 6 wrong tries to try to guess the correct word.\nIf you don't guess the word correctly, you lose the game.")
 max = 6
 alpha = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
 letterguessed = []
-
+# How do I break the loop after the user guesses the word before the max is at 1?
 while max >= 2:
     guess = input(" Guess a letter: ")
     if guess not in alpha:
@@ -20,6 +20,7 @@ while max >= 2:
     else:
         guess in word
         print("Good job! That letter is in the word.")
+    
 
     for letter in word:
         letterguessed.append(guess)
